@@ -13,6 +13,9 @@ public class AppIntegrationTest extends FluentTest {
   }
 
   @ClassRule
+  public static DatabaseRule database = new DatabaseRule();
+
+  @ClassRule
   public static ServerRule server = new ServerRule();
 
   @Test
